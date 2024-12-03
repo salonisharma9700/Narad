@@ -14,7 +14,7 @@ def home():
 
 # Load the BART-based summarization model and tokenizer
 model_name = "saloni9700/bart-sbert-faiss-summarizer"
-tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token="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")
+tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token="")
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name, use_auth_token="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")
 
 # Load Sentence-BERT model for vectorization (if you are using FAISS)
